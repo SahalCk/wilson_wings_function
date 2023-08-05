@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1075955634239",
+    "project_id": "wilson-wings-9b2bb",
+    "storage_bucket": "wilson-wings-9b2bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075955634239:android:95e47a7e25cb509d1e288a",
+        "android_client_info": {
+          "package_name": "com.example.wilson_wings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075955634239-qs5dv7hj9nvps4ta0si0vqvhsqm3f3pg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsn43EKdDp-0Sk1hW7SPDqmZWerr65srM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075955634239-qs5dv7hj9nvps4ta0si0vqvhsqm3f3pg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
