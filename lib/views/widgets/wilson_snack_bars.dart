@@ -23,3 +23,14 @@ void successSnackBar(BuildContext context, String message) {
           borderRadius: BorderRadiusDirectional.all(Radius.circular(10))),
       content: Text(message)));
 }
+
+void noInternetSnackBar(BuildContext context) {
+  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+      duration: Duration(days: 1),
+      closeIconColor: Colors.white,
+      behavior: SnackBarBehavior.floating,
+      backgroundColor: Colors.red,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadiusDirectional.all(Radius.circular(10))),
+      content: Text('No Internet Connection')));
+}

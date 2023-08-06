@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:wilson_wings/utils/colors.dart';
+import 'package:wilson_wings/view_models/home_screen_bloc/home_screen_bloc.dart';
+import 'package:wilson_wings/view_models/movie_details_bloc/movie_deatails_bloc.dart';
 import 'package:wilson_wings/view_models/sign_in_screen_bloc/sign_in_screen_bloc.dart';
 import 'package:wilson_wings/view_models/sign_up_screen_bloc/sign_up_screen_bloc.dart';
 import 'package:wilson_wings/view_models/splash_screen_bloc/splash_screen_bloc.dart';
@@ -27,7 +29,9 @@ class WilsonWings extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => SplashScreenBloc()),
         BlocProvider(create: (context) => SignInScreenBloc()),
-        BlocProvider(create: (context) => SignUpScreenBloc())
+        BlocProvider(create: (context) => SignUpScreenBloc()),
+        BlocProvider(create: (context) => HomeScreenBloc()),
+        BlocProvider(create: (context) => MovieDeatailsBloc())
       ],
       child: ResponsiveSizer(
         builder: (context, orientation, screenType) {
