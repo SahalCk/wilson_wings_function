@@ -65,7 +65,7 @@ class HomeScreen extends StatelessWidget {
       floatingActionButton: StreamBuilder<ConnectivityResult>(
           stream: Connectivity().onConnectivityChanged,
           builder: (context, snapshot) {
-            if (snapshot.data == ConnectivityResult.none ||
+            if (snapshot.data == ConnectivityResult.none &&
                 snapshot.data == null) {
               return SizedBox(
                 width: Adaptive.w(98),
